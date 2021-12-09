@@ -1,13 +1,24 @@
 <template>
-  <div>
-    <h1>Repos</h1>
-    <div v-for="r of repos" :key="r.id">
-      <h2>{{r.owner.login}}/{{r.name}}</h2>
-      <!-- Passing in the username and repo name to Issues component -->
+  <div class="reposContainer">
+    <h2>Repos</h2>
+
+    <ul class="list-group" v-for="r of repos" :key="r.id">
+      <li class="list-group-item">{{r.owner.login}}/{{r.name}}</li>
       <Issues :owner="r.owner.login" :repo="r.name" />
-    </div>
+    </ul>
+    
+    <!-- <div v-for="r of repos" :key="r.id">
+      <h2>{{r.owner.login}}/{{r.name}}</h2>
+      <Issues :owner="r.owner.login" :repo="r.name" />
+    </div> -->
   </div>
 </template>
+
+<style scoped>
+  .reposContainer {
+    margin-top: 20px;
+  }
+</style>
 
 <script>
 import Issues from "./repo/Issues.vue";
