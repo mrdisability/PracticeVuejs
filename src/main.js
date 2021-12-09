@@ -8,8 +8,9 @@ import './assets/styles.css';
 // Import Bootstrap an BootstrapVue CSS files (order is important)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import router from './router'
 
-createApp(App).mount('#app')
+createApp(App).use(router).mount('#app')
 
 //BootstrapVue doesnt support Vuejs3 yet
 // Make BootstrapVue available throughout your project

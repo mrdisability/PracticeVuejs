@@ -2,7 +2,7 @@
   <div class="formContainer">
 
     <div class="alert alert-danger" role="alert">
-      To see your user data and repositories, you have to create your own Github personal access token in developer settings. 
+      To see your user data and repositories, you have to create your own GitHub personal access token in developer settings. 
     </div>
 
 <!-- Form to enter github access token -->
