@@ -1,4 +1,4 @@
-# PracticeVuejs: https://thesamoanppprogrammer.github.io/PracticeVuejs/
+# PracticeVuejs
 
 Learning, practicing, and keeping up to date with Vuejs.
 
